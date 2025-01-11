@@ -22,4 +22,4 @@ jobs:
       - name: Testing
         run: npm run test
       - name: Trigger deployment
-        run: curl https://api.render.com/deploy/srv-${{ secrets.POKEMON_SERVICE_ID }}?key=${{ secrets.POKEMONS_SECRET_KEY }}
+        run: curl https://full-stack-open-pokedex-dye6.onrender.com/deploy/srv-${{ secrets.POKEMON_SERVICE_ID }}?key=${{ secrets.POKEMONS_SECRET_KEY }}

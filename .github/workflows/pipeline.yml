@@ -35,6 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PDEFAULT_BUMP: patch
   discord_message:
+    needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
     steps:
       - name: Test Success
